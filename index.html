@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Editor</title>
+</head>
+<body>
+  
+  <header>
+    <div class="container row">
+      <div class="brand">
+        <div class="logo"></div>
+        <div class="title">Code Editor</div>
+      </div>
+
+      <div class="row">
+        <button class="btn secondary" id="saveBtn" title="Save work locally"><span>Save</span></button>
+        <button class="btn secondary" id="loadBtn" title="Load work file"><span>Load</span></button>
+        <input type="file" id="openFile" accept="application/json" hidden>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <aside class="card panel stack">
+      <h2>Task / Assignment</h2>
+      <textarea id="assignment" class="text" placeholder="Write the task description here..."></textarea>
+      <div class="stack">
+        <label for="testArea">Validation tests (JavaScript only - optional)</label>
+        <textarea id="testArea" class="text" placeholder="Write simple to append after the students code to check the solution."></textarea>
+      </div>
+    </aside>
+  </main>
+
+</body>
+</html>
